@@ -4,4 +4,7 @@
 
 Phishing is a form of digital attack with the objective of obtaining access to a target's email, social media or other online accounts. The reasons why attackers recur to phishing can be various, and the primary certainly is because especially email accounts are particularly appetible sources of information for an attacker. Additionally, obtaining access to emails or other online accounts could allow to, for example, impersonate the victim in order to conduct further attacks or even obtain access to yet more accounts through a password recovery process.
 
-There are different types of phishing attacks, but essentially we can categorize them in two.
+There are different types of phishing attacks, but essentially we can categorize them in two:
+
+* Password-Stealing Phishing
+* OAuth Phishing (or Third-Party Application Phishing)
