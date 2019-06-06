@@ -11,3 +11,4 @@
 * [Review your Accounts](review.md)
 * [Conclusions](conclusions.md)
 * [Reading Material](readings.md)
+* [License and Credits](license-credits.md)
