@@ -306,17 +306,35 @@
 <p>Currently, security keys are the most secure form of two-factor authentication. Security keys are hardware tokens that implement what is known as the <a href="https://en.wikipedia.org/wiki/Universal_2nd_Factor" target="_blank">U2F protocol</a> and they generally come in the shape of USB keys, although some support other channels such as NFC (mostly to function with mobile devices). When an online account is protected using a security key, the user is required not only to enter their password but to physically insert the security key in the device. This process is nicely visualized in the following animation taken from the <a href="https://www.kickstarter.com/projects/conorpatrick/solo-the-first-open-source-fido2-security-key-usb" target="_blank">Solo</a> Kickstarter campaign:</p>
 <p><img src="img/solo.gif" alt=""></p>
 <p>While in the case, for example, of SMS verification an attacker could steal the verification code sent to the user, in this case the attacker can only physically steal the security key (as well as obtain the password) in order to log into the target&apos;s account. Obviously, this is significantly harder.</p>
+<h2 id="how-to-pick-a-security-key">How to pick a Security Key</h2>
+<p>There are numerous companies producing these security keys, following are some of the most popular options:</p>
+<ul>
+<li><a href="https://www.yubico.com/product/security-key-by-yubico/" target="_blank">YubiKey</a></li>
+</ul>
+<p><img src="img/yubikey.png" alt=""></p>
+<ul>
+<li><a href="https://www.nitrokey.com/" target="_blank">NitroKey</a></li>
+</ul>
+<p><img src="img/nitrokey.jpg" alt=""></p>
+<ul>
+<li><a href="https://www.solokeys.com/" target="_blank">SoloKeys</a> (open hardware and open source)</li>
+</ul>
+<p><img src="img/solokey.png" alt=""></p>
+<p>Online shops will most likely offer you various options and variants of these different keys. The two most important characteristics you should pay attention to are:</p>
+<ol>
+<li><strong>The key explicitly supports the U2F protocol.</strong> Most security keys do, but you might find other variants that are intended for other uses or protocols.</li>
+<li><strong>The key uses a connector supported by your device.</strong> Most keys will come with a standard USB connector (like in the first two pictures, for example). Other variatios are on the market, for example using a <a href="https://en.wikipedia.org/wiki/USB_Type-C" target="_blank">USB-C</a> connector (like in the last picture above), which is commonly available with most recent laptops and even mobile devices.</li>
+</ol>
+<h2 id="enabling-security-keys">Enabling Security Keys</h2>
+<p>Service providers generally offer different configurations for secure authentication, and those options can be hard to navigate. Even those services who support security keys will most likely allow for fallback authentication and verification mechanisms to be enabled. For example, they might require you to configure an SMS verification as a fallback verification procedure in case you lose your security key. This is quite common, and it is somewhat necessary for service providers to reduce the likelihood of end users to be permanently locked out from their accounts.</p>
+<p>The downside of this configuration is that attackers might trick you into a phishing attack that relies on any of the fallback (and less secure) verification mechanisms that they might be able to bypass. However, once you get accustomed to be authenticating with security keys, whenever you encounter what looks like, for example, a Google login requesting you a verification procedure different from your security key, you should be alert as it might be a phishing attack.</p>
+<p>Some services provide hardened plans specifically intended for users at risk. For example, accounts with <a href="https://landing.google.com/advancedprotection/" target="_blank">Google&apos;s Advanced Protection</a> enabled will <em>only</em> allow authentication through security keys. If you feel this might be a safer option for you, we invite you to read carefully through its description and guidelines provided by the online service, and make sure you fully understand the benefits as well as the constraints.</p>
+<h2 id="are-there-any-downsides">Are there any downsides?</h2>
 <p>More considerations on two-factor authentication and security keys are available in <a href="https://www.amnesty.org/en/latest/research/2018/12/when-best-practice-is-not-good-enough/" target="_blank">this post</a> from Amnesty International:</p>
 <blockquote>
 <p>This technology is supported for example by Google&apos;s Advanced Protection program, by Facebook and as of recently by Twitter as well. This process might appear painful at first, but it significantly raises the difficulty for any attacker to be successful, and it isn&apos;t quite as burdensome as one might think. Normally, you will be required to use a security key only when you are authenticating for the first time from a new device.</p>
 <p>That said, security keys have downsides as well. Firstly, they are still at a very early stage of adoption: only few services support them and most email clients (such as Thunderbird) are still in the process of developing an integration. Secondly, you can of course lose your security key and be locked out of your accounts. However, you could just in the same way lose the phone you use for other forms of two-factor authentication, and in both cases, you should carefully configure an option for recovery (through printed codes or a secondary key) as instructed by the particular service.</p>
 </blockquote>
-<p>There are numerous companies producing these security keys. When you shop for one, make sure that your selected option explicitly supports U2F. Some of the options we recommend are:</p>
-<ul>
-<li><a href="https://www.yubico.com/product/security-key-by-yubico/" target="_blank">YubiKey</a></li>
-<li><a href="https://www.nitrokey.com/" target="_blank">NitroKey</a></li>
-<li><a href="https://shop.solokeys.com/" target="_blank">SoloKeys</a> (open hardware and open source)</li>
-</ul>
 
                                 
                                 </section>
@@ -360,7 +378,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Security Keys","level":"1.4.2","depth":2,"next":{"title":"Review your Accounts","level":"1.5","depth":1,"path":"review.md","ref":"review.md","articles":[]},"previous":{"title":"Two-Factor Authentication","level":"1.4.1","depth":2,"path":"two-factor.md","ref":"two-factor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security-keys.md","mtime":"2019-06-06T11:14:53.799Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T13:23:35.218Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Security Keys","level":"1.4.2","depth":2,"next":{"title":"Review your Accounts","level":"1.5","depth":1,"path":"review.md","ref":"review.md","articles":[]},"previous":{"title":"Two-Factor Authentication","level":"1.4.1","depth":2,"path":"two-factor.md","ref":"two-factor.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security-keys.md","mtime":"2019-06-07T13:17:41.450Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-07T12:15:00.675Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
