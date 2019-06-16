@@ -6,7 +6,8 @@ Attackers have been abusing this feature by creating malicious third-party apps 
 
 Following is a screenshot of a malicious third-party app called "*Secure Mail*" requesting access to a victim's Gmail account.
 
-![](img/gmail-oauth.png)  
+![](img/gmail-oauth.png)
+
 *Image from [Amnesty International](https://www.amnesty.org/en/latest/research/2019/03/phishing-attacks-using-third-party-applications-against-egyptian-civil-society-organizations/)*
 
 While normally users are warned by Google and others when they are about to grant access to a third-party application, OAuth Phishing is a much lesser known tactic and can be quite deceitful. Additionally, because the authentication to the account happens through the legitimate service, traditional anti-phishing mitigations (such as those we will explain later in this text) do not provide any advantage here.

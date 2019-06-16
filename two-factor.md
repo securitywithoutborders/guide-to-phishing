@@ -14,7 +14,8 @@ Because SMS messages can be intercepted (for example through wiretapping by the 
 
 When you enable two-factor verification, some services will ask you to install a mobile app on your phone which you will be required to open when attempting a login to fetch a short-lived numerical or alphanumerical token to enter in the login page, very similarly to the previous option. For example, this is what [Google Authenticator](https://google-authenticator.com/) looks like:
 
-![](img/google-authenticator.png)  
+![](img/google-authenticator.png)
+
 *Image from Google*
 
 Better alternatives to Google Authenticator are, for example, [Authy](https://authy.com/) and [Duo Mobile](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile).
