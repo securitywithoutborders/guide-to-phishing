@@ -25,7 +25,8 @@ Similarly to SMS verification, whenever logging into your two-factor enabled acc
 
 When you enable two-factor verification, some services will ask you to install a mobile app which will automatically send you a notification when a login to your account is attempted, and if you wish to authorize it you'd just need to tap a button. For example, Google tends to default its Android users to use this two-factor method through the Google Prompt:
 
-![](img/google-prompt.png)  
+![](img/google-prompt.png)
+
 *Image from Google*
 
 The advantage of push notifications are the convenience of not having to type a numerical code, and particularly the additional information on the attempted login that the app might display. For example, as visible in the screenshot above, a push notification might show the type of device and the geographical location from which the login was attempted. If those details do not appear familiar to you, they might be a good symptom of an ongoing phishing attempt, and you can prevent the login from proceeding
