@@ -14,8 +14,7 @@ Because SMS messages can be intercepted (for example through wiretapping by the 
 
 When you enable two-factor verification, some services will ask you to install a mobile app on your phone which you will be required to open when attempting a login to fetch a short-lived numerical or alphanumerical token to enter in the login page, very similarly to the previous option. For example, this is what [Google Authenticator](https://google-authenticator.com/) looks like:
 
-![](img/google-authenticator.png)
-
+![](img/google-authenticator.png)  
 *Image from Google*
 
 Better alternatives to Google Authenticator are, for example, [Authy](https://authy.com/) and [Duo Mobile](https://duo.com/product/trusted-users/two-factor-authentication/duo-mobile).
@@ -26,11 +25,10 @@ Similarly to SMS verification, whenever logging into your two-factor enabled acc
 
 When you enable two-factor verification, some services will ask you to install a mobile app which will automatically send you a notification when a login to your account is attempted, and if you wish to authorize it you'd just need to tap a button. For example, Google tends to default its Android users to use this two-factor method through the Google Prompt:
 
-![](img/google-prompt.png)
-
+![](img/google-prompt.png)  
 *Image from Google*
 
-The advantage of push notification systems are primarily the convenience of not having to type a numerical code, and secondly the additional information on the attempted login that the app might display. For example, as visible in the screenshot above, a push notification might show the type of device and the geographical location from which the login was attempted. If those details do not appear familiar to you, they might be a good symptom of an ongoing phishing attempt.
+The advantage of push notifications are the convenience of not having to type a numerical code, and particularly the additional information on the attempted login that the app might display. For example, as visible in the screenshot above, a push notification might show the type of device and the geographical location from which the login was attempted. If those details do not appear familiar to you, they might be a good symptom of an ongoing phishing attempt, and you can prevent the login from proceeding
 
 ---
 
@@ -42,7 +40,8 @@ However, **these forms of two-factor verification are not a solution to *all* ph
 
 For example, following is a screenshot of a phishing site soliciting a verification code that was sent via SMS:
 
-![](img/gmail-2fa.png)
+![](img/gmail-2fa.png)  
+*Image from Amnesty International*
 
 This is not hypotethical. We have seen several cases of large-scale targeted phishing campaigns that have employed this technique. For example in the following reports:
 
